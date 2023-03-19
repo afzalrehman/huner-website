@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+
+/* ===========edit by muhammad afzal */
+* {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  overflow: auto;
+}
+
+/* nav start */
+.navbar {
+  background-color: #340164;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+/* nav end */
+
+/* ===========edit by muhammad afzal */
+/* hero slider start */
+.slide1 {
+  background-image: url(../img/hero\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  padding-top: 100px;
+}
+.slide1::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.slide2 {
+  background-image: url(../img/hero\ \(3\).jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  padding-top: 100px;
+}
+.slide2::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.carousel-item {
+  position: absolute;
+  /* display: flex;
+  align-items: center; */
+  /* transform: translate(-50%, -50%); */
+}
+.carousel-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* margin:aut o; */
+  top: 40%;
+  /* left: 40%; */
+  z-index: 1;
+}
+/* =======hero slider end====== */
+
+/* ================working start=============*/
+.working {
+  background-color: #003E8A;
+  color: white;
+  margin-top: 100px;
+}
+
+/* ================working start=============*/
+/* ================Vision start=============*/
+.icon-vision {
+  padding: 9px 13px;
+  /* text-align: center; */
+  border: 4px solid #003E8A;
+  border-radius: 10px;
+  /* margin-right: 10px; */
+}
+
+/* ================Vision end=============*/
+
+/* ================card start=================*/
+.box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 0 20px;
+
+}
+.main-box {
+  margin-top: 100px;
+}
+.card-body {
+  background-color: #003E8A;
+
+}
+
+.box{
+  transition: 1s;
+}
+
+.box:hover{
+transform: scale(1.1);
+}
+/* ================card end=================*/
+
+/* ================the-GROWTH start================ */
+.icon-GROWTH {
+  color: #003E8A;
+}
+#growth {
+  background-image: url(../img/bg-image.jpg);
+  width: 100%;
+  height: 54vh;
+  background-position: 100%;
+  background-size: cover;
+  color: white;
+  position: relative;
+  margin-top: 150px;
+  /* margin-bottom: 100px; */
+
+}
+#growth::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 54vh;
+  top: 0;
+}
+/* ================the-GROWTH end================ */
+/* the institute */
+
+@media only screen and (max-width: 600px) {
+  #growth {
+    background-image: url(../img/bg-image.jpg);
+    width: 100%;
+    height: 142vh;
+    background-position: 100%;
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  #growth::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 142vh;
+    top: 0;
+  }
+
+  .icon-mission {
+    /* margin-right: 60px; */
+    text-align: center;
+  }
+
+  /* =====hero slide===== */
+.slide1 {
+    background-image: url(../img/hero\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+  }
+.slide1::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+ .slide2 {
+    background-image: url(../img/hero\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+  }
+.slide2::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px) {
+  #growth {
+    background-image: url(../img/bg-image.jpg);
+    width: 100%;
+    height: 150vh;
+    background-position: 100%;
+    background-size: cover;
+    color: white;
+    position: relative;
+
+  }
+ #growth::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 150vh;
+
+    top: 0;
+
+  }
+/* ======hero slide====== */
+  .slide1 {
+    background-image: url(../img/hero\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+  }
+ .slide1::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+.slide2 {
+    background-image: url(../img/hero\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+  }
+  .slide2::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+/* ====================index html end================== */
+
+/* slide card */
+/* .img-ambreen {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}  */
+
+/* ====================testimonials====================== */
+/* .student-feed {
+  padding: 0px 100px;
+} */
+
+
+/* ===========edit by muhammad afzal */
+/*=========================================================
+====================== the huner foundesion start=========
+========================================================== */
+
+/* ====hero section start===== */
+#thahero {
+  background-image: url(../img/hero\ image.jpg);
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#thahero::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 60vh;
+
+}
+
+.heading1 {
+  position: absolute;
+  top: 49%;
+  z-index: 1;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 32px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+
+/* ====hero section end===== */
+
+/* =======CAREERGUIDANCE============ */
+.CAREERGUIDANCE {
+  margin: 80px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.creer-contect {
+  background-color: #333232;
+}
+
+.Submit {
+  background-color: blue;
+  border: none;
+
+}
+
+.slect-area {
+  border: none;
+  outline: none;
+}
+
+.career-guidance {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+span {
+  color: blue;
+  font-family: 'Roboto Slab', serif;
+}
+
+.abou-font {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.tha-headeig1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  line-height: 46px;
+  color: #333333;
+  font-size: 32px;
+}
+
+/* =============== ===========================
+================course start== ===============
+============================================== */
+
+.courses {
+  margin: 120px 0;
+
+}
+
+.course-h4 {
+  color: #333333;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.course-style {
+  font-size: 18px;
+  color: #333333;
+  list-style: none;
+  font-style: normal;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+
+}
+
+/* =============== course end ============== */
+/* ===========edit by muhammad afzal */
+/* =================================================
+=============== card course  start==================
+==================================================== */
+/* .box {
+  transition: 0.5s;
+  width: 100%;
+  
+} */
+/* .box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-30px);
+
+} */
+.card-font {
+  font-size: 14px;
+  color: #505050;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-font2 {
+  background-color: #8a8a8a;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heading-card {
+  /* font-family:  poppins, sans-serif; */
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+.border-course-duration {
+  border-right: 1px solid #bdbdbd;
+}
+
+.fa-star {
+  color: blue;
+  border: none;
+
+}
+
+.card-box {
+  transition: 0.5s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-30px);
+  /* transform: scale(1.05); */
+
+}
+
+/* =============== card course  end ============== */
+
+/* =======up coming event======= */
+.event-time {
+  color: white;
+  background-color: blue;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  ;
+  font-weight: 600;
+  line-height: 16px;
+  /* width: 7%; 
+   position:absolute; */
+  border-radius: 0px 0px 0px 30px;
+}
+
+.box-event {
+  border-radius: 0px 30px 0px 0px;
+  background-color: #333333;
+  border: 1px solid #d4d4d4;
+  
+}
+
+.evevt-time-text {
+  border-bottom: 1px dashed white;
+  border-width: 2px;
+
+
+}
+
+.evnet-link {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  padding-left: 8px;
+  transition: 0.5s;
+  /* line-height: 18px; */
+
+}
+
+/* .evnet-link:hover{
+  transform: scale(1.1);
+} */
+
+.event-p {
+  color: #a9a9a9;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 8px;
+  font-family: Roboto, sans-serif;
+  ;
+
+}
+
+
+.heading-upcoming {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/*============ qustion-row============ */
+.qustion-row {
+  border-left: 1px solid black;
+
+}
+
+.fa-plus {
+  margin-right: 20px;
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  /* margin-top: 10px; */
+  padding-top: 7px;
+  
+}
+
+.how-is-icon{
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  font-family: 'Roboto Slab', serif;
+  line-height: 20px;
+}
+
+/* ==================contact us page================ */
+#contact{
+  margin: 100px 0px;
+}
+
+
+
+
+/*========================== footer ==========================*/
+#footer {
+  background-color: #222121;
+  padding-top: 30px;
+}
+.footer-h1 {
+  color: #fff;
+  font-family: 'PT Serif', serif;
+}
+.footer-p {
+  color: #fff;
+  font-size: 16px;
+}
+.footer-h3 {
+  color: #fff;
+}
+.footer-icon {
+  background-color: #042dc2;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0px 5px;
+  font-size: 20px;
+}
+.footer-icon:hover {
+  background-color: #175cff;
+}
+hr {
+  /* color: #fff; */
+  border: 2px solid white;
+}
+
+
+/* ===============footer end=============== */
